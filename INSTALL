@@ -1,0 +1,19 @@
+You will need nettle (https://www.lysator.liu.se/~nisse/nettle/).
+
+If you are building from a tarball and have nettle installed system wide,
+building and installing should be as easy as
+./configure
+make
+make install
+
+If you are building from git you may need to install autotools.
+On a debian or ubuntu system, please install the following packages:
+nettle-dev build-essential
+
+after that,
+./bootstrap.sh && ./configure && make
+
+should do the trick
+
+
+
