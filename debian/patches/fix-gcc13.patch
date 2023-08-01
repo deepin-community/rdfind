@@ -1,0 +1,15 @@
+Description: Fix gcc-13 build
+Author: Han Gao <gaohan@iscas.ac.cn>
+
+Last-Update: 2023-03-27
+
+--- rdfind-1.5.0.orig/Fileinfo.hh
++++ rdfind-1.5.0/Fileinfo.hh
+@@ -9,6 +9,7 @@
+ 
+ #include <array>
+ #include <string>
++#include <cstdint>
+ 
+ // os specific headers
+ #include <sys/types.h> //for off_t and others.
